@@ -1,0 +1,33 @@
+.hero {
+  border-bottom: var(--panel-border);
+  background-color: var(--paper);
+  background-blend-mode: multiply;
+}
+
+.hero__inner {
+  padding: 64px 24px 56px;
+  max-width: 640px;
+}
+
+.hero__title {
+  font-family: var(--font-display);
+  font-size: clamp(48px, 9vw, 84px);
+  line-height: 0.94;
+  margin: 10px 0 18px;
+}
+
+.hero__sub {
+  font-size: 16px;
+  color: var(--ink-soft);
+  max-width: 46ch;
+}
+
+.catalog {
+  padding: 48px 24px 80px;
+}
+
+.catalog__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+}

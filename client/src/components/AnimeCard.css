@@ -1,0 +1,78 @@
+.anime-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: var(--panel-border);
+  box-shadow: 6px 6px 0 var(--ink);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.anime-card:hover,
+.anime-card:focus-visible {
+  transform: translate(-4px, -4px);
+  box-shadow: 10px 10px 0 var(--hanko);
+}
+
+.anime-card__cover {
+  position: relative;
+  border-bottom: var(--panel-border);
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: var(--ink);
+}
+
+.anime-card__cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.anime-card__eps {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  padding: 3px 8px;
+}
+
+.anime-card__body {
+  padding: 18px 18px 8px;
+  flex: 1;
+}
+
+.anime-card__title {
+  font-family: var(--font-display);
+  font-size: 32px;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.anime-card__tagline {
+  color: var(--ink-soft);
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.anime-card__genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.anime-card__cta {
+  display: block;
+  padding: 12px 18px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-top: 2px solid var(--line);
+  color: var(--hanko);
+}
